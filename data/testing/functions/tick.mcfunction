@@ -1,0 +1,1 @@
+# execute as @a unless score @s DB matches 1 run function testing:add_player
