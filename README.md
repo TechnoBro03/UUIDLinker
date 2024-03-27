@@ -2,8 +2,8 @@
 A datapack that can get the formatted hexadecimal string representation of the UUID of any entity.
 
 ## Usage
-* Use '/execute as @s run function uuid_linker:get_uuid' to get the UUID of any entity (replace @s with anything)
-* Use '/data get storage minecraft:uuid_linker UUID' to view both the original UUID representation (int array) and the hexadecimal string
+* Use ```/execute as @s run function uuid_linker:get_uuid``` to get the UUID of any entity (replace @s with anything)
+* Use ```/data get storage minecraft:uuid_linker UUID``` to view both the original UUID representation (int array) and the hexadecimal string
 * Use the hexadecimal string for dynamic entity selection using macros
 
 ## Example
