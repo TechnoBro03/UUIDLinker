@@ -9,4 +9,7 @@ scoreboard players set .MAX UUIDLinker 2147483647
 
 data modify storage uuid_linker Hex.Table set value ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f']
 
+# Default to store all UUIDs
+scoreboard players set .store UUIDLinker 1
+
 tellraw @a ["",{"text":"<","color":"white"},{"text":"UUID Linker","color":"aqua"},{"text":"> Datapack loaded!"}]
