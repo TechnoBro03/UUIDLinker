@@ -10,7 +10,7 @@ execute if score .INT32 UUIDLinker matches ..0 run scoreboard players add .quoti
 
 # Get 32 bit representation of int (bit array)
 scoreboard players set .count UUIDLinker 32
-function uuid_linker:binary_helper
+function uuid_linker:internal/binary_helper
 
 # Set first bit to 1 for 8bit 2s compliment if negative
 execute if score .INT32 UUIDLinker matches ..0 run data modify storage minecraft:uuid_linker Binary.Array[0] set value 1

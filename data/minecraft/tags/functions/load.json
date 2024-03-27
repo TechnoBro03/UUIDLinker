@@ -1,5 +1,5 @@
 {
     "values": [
-    "uuid_linker:load"
+    "uuid_linker:internal/load"
 ]
 }

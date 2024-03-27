@@ -11,4 +11,4 @@ data modify storage uuid_linker Binary.Array prepend from storage uuid_linker Bi
 
 # Repeat for all 32 bits
 scoreboard players remove .count UUIDLinker 1
-execute unless score .count UUIDLinker matches 0 run function uuid_linker:binary_helper
+execute unless score .count UUIDLinker matches 0 run function uuid_linker:internal/binary_helper

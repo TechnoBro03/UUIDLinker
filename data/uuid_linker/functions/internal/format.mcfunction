@@ -9,4 +9,4 @@ data modify storage uuid_linker Format.Group3 set string storage uuid_linker For
 data modify storage uuid_linker Format.Group4 set string storage uuid_linker Format.String 20 32
 
 # Concatinate all groups together, with dashes
-function uuid_linker:format_helper with storage uuid_linker Format
+function uuid_linker:internal/format_helper with storage uuid_linker Format

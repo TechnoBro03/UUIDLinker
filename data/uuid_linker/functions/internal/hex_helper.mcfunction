@@ -22,7 +22,7 @@ scoreboard players operation .value UUIDLinker += .temp UUIDLinker
 
 # Save the corresponding hexadecimal character
 execute store result storage uuid_linker Hex.Char int 1 run scoreboard players get .value UUIDLinker
-function uuid_linker:hex_helper2 with storage uuid_linker Hex
+function uuid_linker:internal/hex_helper2 with storage uuid_linker Hex
 
 # Remove the first 4 bits
 data remove storage uuid_linker Hex.BinaryArray[0]
@@ -32,4 +32,4 @@ data remove storage uuid_linker Hex.BinaryArray[0]
 
 # Repeat for all 128 bits (32 groups of 4)
 scoreboard players remove .count UUIDLinker 1
-execute unless score .count UUIDLinker matches 0 run function uuid_linker:hex_helper
+execute unless score .count UUIDLinker matches 0 run function uuid_linker:internal/hex_helper
