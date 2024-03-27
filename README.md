@@ -1,5 +1,5 @@
 # UUID Linker
-A datapack that can get the formatted hexadecimal string representation of any entity UUID.
+A datapack that can get the formatted hexadecimal string UUID representation of any entity.
 
 ## Usage
 * Use '/execute as @s run function uuid_linker:get_uuid' to get the UUID of any entity (replace @s with anything)
