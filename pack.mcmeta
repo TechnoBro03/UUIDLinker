@@ -1,6 +1,7 @@
 {
     "pack" : {
-        "pack_format" : 26,
-        "description" : "A simple test datapack."
+        "pack_format" : 36,
+        "supported_formats" : [36,36],
+        "description" : "A datapack that can get the formatted hexadecimal string representation of any entity UUID."
     }
 }

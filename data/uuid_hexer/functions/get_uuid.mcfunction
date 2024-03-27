@@ -17,11 +17,11 @@ function uuid_hexer:to_binary with storage uuid_hexer Binary
 data modify storage uuid_hexer Binary.INT32 set from storage uuid_hexer UUID.IntArray[0]
 function uuid_hexer:to_binary with storage uuid_hexer Binary
 
-# Turn bit array into hexidecimal string
+# Turn bit array into hexadecimal string
 function uuid_hexer:to_hex with storage uuid_hexer Binary
 
-# Format hex string (add dashes)
+# Format hexadecimal string (add dashes)
 function uuid_hexer:format with storage uuid_hexer Hex
 
-# Finally, set UUID.HexString as the formatted hex string
+# Finally, set UUID.HexString as the formatted hexadecimal string
 data modify storage uuid_hexer UUID.HexString set from storage uuid_hexer Format.FormattedString

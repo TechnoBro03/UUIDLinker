@@ -20,7 +20,7 @@ scoreboard players operation .value UUIDHexer += .temp UUIDHexer
 execute store result score .temp UUIDHexer run data get storage uuid_hexer Hex.BinaryArray[3]
 scoreboard players operation .value UUIDHexer += .temp UUIDHexer
 
-# Save the corresponding hexidecimal character
+# Save the corresponding hexadecimal character
 execute store result storage uuid_hexer Hex.Char int 1 run scoreboard players get .value UUIDHexer
 function uuid_hexer:hex_helper2 with storage uuid_hexer Hex
 

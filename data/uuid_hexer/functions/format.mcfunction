@@ -1,4 +1,4 @@
-# Copy hex string
+# Copy hexadecimal string
 $data modify storage uuid_hexer Format.String set value $(String)
 
 # Seperate hex string into predetermined groups
