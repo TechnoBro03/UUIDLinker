@@ -14,5 +14,4 @@ function uuid_linker:internal/string/string
 function uuid_linker:internal/format/format
 
 # Store result
-data modify storage uuid_linker UUID.HexString set from storage uuid_linker Temp.FormattedString
 execute if score .store UUIDLinker matches 1 run function uuid_linker:internal/store/store with storage uuid_linker Temp
