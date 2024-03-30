@@ -9,7 +9,7 @@ A datapack that can get the formatted hexadecimal string representation of the U
   * At the cost of memory, storing the UUID will prevent the game from re-calculating it, saving A LOT performance (over 3x faster!*).
 * Use the hexadecimal string for dynamic entity selection using macros.
 
-\* When testing on my personal PC
+###### \* When testing on my personal PC
 
 ## Example
 ```
