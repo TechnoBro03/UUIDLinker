@@ -5,11 +5,11 @@ A datapack that can get the formatted hexadecimal string representation of the U
 * ```/execute as @s run function uuid_linker:get_uuid```: Get UUID of any entity (replace @s with anything).
 * ```/data get storage minecraft:uuid_linker UUID```: View both the original UUID representation (int array) and the hexadecimal string.
 * ```/function uuid_linker:toggle_storing```: Toggle between storing and not storing UUIDs (enabled by default).
-  * ```get_uuid``` is performance intensive. If called often (ex. ```per tick```) and/or on many entities (ex. ```@e[distance=..100]```), the game tick times will increase (over 3x slower*).
-  * Storing the UUID will prevent the game from re-calculating it, saving A LOT performance (virtually the same performance as without the datapack at all*).
+  * ```get_uuid``` is performance intensive. If called often (ex. ```per tick```) and/or on many entities (ex. ```@e[distance=..100]```), the game tick time will increase (over 3x slower*).
+  * Storing the UUID will prevent re-calculating it, saving A LOT performance (virtually the same performance as without the datapack*).
 * Use the hexadecimal string for dynamic entity selection using macros.
 
-###### \* Performace metrics from personal PC when running ```/execute as @e[distance=..100] run function uuid_linker:get_uuid``` every tick. Actual tick times increases from 5ms -> 15ms avg.
+###### \* Performace metrics from personal PC when running ```/execute as @e[distance=..100] run function uuid_linker:get_uuid``` every tick. Actual tick time increased from 5ms -> 15ms avg.
 
 ## Example
 ```
