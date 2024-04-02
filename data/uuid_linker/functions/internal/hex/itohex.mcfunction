@@ -9,7 +9,7 @@ execute if score .INT32 UUIDLinker < .0 UUIDLinker run scoreboard players operat
 execute if score .INT32 UUIDLinker < .0 UUIDLinker run scoreboard players add .quotient UUIDLinker 1
 
 # Int32 -> CharArray[8]
-function uuid_linker:internal/internal/hex/itohex_helper
+function uuid_linker:internal/hex/itohex_helper
 function uuid_linker:internal/hex/itohex_helper
 function uuid_linker:internal/hex/itohex_helper
 function uuid_linker:internal/hex/itohex_helper
