@@ -1,17 +1,9 @@
-# Store UUID int array
-data modify storage uuid_linker UUID.IntArray set from entity @s UUID
+# Check if UUID was already calculated
+execute if score @s UUIDLinkerA matches 0.. run function uuid_linker:internal/retrieve
+execute if score @s UUIDLinkerA matches 0.. run return 0
 
-# Check if UUID has already been stored
-execute if function uuid_linker:internal/store/check run return 0
-
-# Turn int array into hexadecimal array
-function uuid_linker:internal/hex/hex
-
-# Turn hexadecimal array into hexadecimal string
-function uuid_linker:internal/string/string
-
-# Format string
-function uuid_linker:internal/format/format
-
-# Store result
-execute if score .store UUIDLinker matches 1 run function uuid_linker:internal/store/store with storage uuid_linker Temp
+# Calculate UUID
+function uuid_linker:internal/index
+function uuid_linker:internal/store
+function uuid_linker:internal/hex with storage uuid_linker Temp
+function uuid_linker:internal/concat with storage uuid_linker Temp
