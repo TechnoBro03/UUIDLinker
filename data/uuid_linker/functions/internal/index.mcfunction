@@ -1,5 +1,5 @@
 # Get the index for lookup table
-execute store result score .INT32 UUIDLinkerA run data get entity @s UUID[0]
+execute store result score .INT32 UUIDLinkerA run data get storage uuid_linker UUID.IntArray[0]
 
 scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
@@ -10,7 +10,7 @@ scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
 execute store result storage uuid_linker Temp.a int 1 run scoreboard players get .remainder UUIDLinkerA
 
-execute store result score .INT32 UUIDLinkerA run data get entity @s UUID[1]
+execute store result score .INT32 UUIDLinkerA run data get storage uuid_linker UUID.IntArray[1]
 
 scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
@@ -21,7 +21,7 @@ scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
 execute store result storage uuid_linker Temp.c int 1 run scoreboard players get .remainder UUIDLinkerA
 
-execute store result score .INT32 UUIDLinkerA run data get entity @s UUID[2]
+execute store result score .INT32 UUIDLinkerA run data get storage uuid_linker UUID.IntArray[2]
 
 scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
@@ -32,7 +32,7 @@ scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
 execute store result storage uuid_linker Temp.e int 1 run scoreboard players get .remainder UUIDLinkerA
 
-execute store result score .INT32 UUIDLinkerA run data get entity @s UUID[3]
+execute store result score .INT32 UUIDLinkerA run data get storage uuid_linker UUID.IntArray[3]
 
 scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
 scoreboard players operation .remainder UUIDLinkerA %= .65536 UUIDLinkerA
