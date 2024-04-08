@@ -1,4 +1,6 @@
 # Get the index for lookup table
+data modify storage uuid_linker UUID.IntArray set from entity @s UUID
+
 execute store result score .INT32 UUIDLinkerA run data get storage uuid_linker UUID.IntArray[0]
 
 scoreboard players operation .remainder UUIDLinkerA = .INT32 UUIDLinkerA
