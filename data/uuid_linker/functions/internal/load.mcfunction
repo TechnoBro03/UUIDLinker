@@ -1,15 +1,15 @@
-scoreboard objectives add UUIDLinkerA dummy
-scoreboard objectives add UUIDLinkerB dummy
-scoreboard objectives add UUIDLinkerC dummy
-scoreboard objectives add UUIDLinkerD dummy
-scoreboard objectives add UUIDLinkerE dummy
-scoreboard objectives add UUIDLinkerF dummy
-scoreboard objectives add UUIDLinkerG dummy
-scoreboard objectives add UUIDLinkerH dummy
+scoreboard objectives add uuid_linker.A dummy
+scoreboard objectives add uuid_linker.B dummy
+scoreboard objectives add uuid_linker.C dummy
+scoreboard objectives add uuid_linker.D dummy
+scoreboard objectives add uuid_linker.E dummy
+scoreboard objectives add uuid_linker.F dummy
+scoreboard objectives add uuid_linker.G dummy
+scoreboard objectives add uuid_linker.H dummy
 
 
 # Set predefined values for math and look-up tables
-scoreboard players set .65536 UUIDLinkerA 65536
+scoreboard players set .65536 uuid_linker.A 65536
 
 tellraw @a ["",{"text":"<","color":"white"},{"text":"UUID Linker","color":"aqua"},{"text":"> Datapack loaded!"}]
 
