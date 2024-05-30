@@ -10,3 +10,5 @@ scoreboard objectives remove uuid_linker.H
 data remove storage minecraft:uuid_linker UUID
 data remove storage minecraft:uuid_linker Temp
 data remove storage minecraft:uuid_linker Hex
+
+tellraw @a ["","<",{"text":"UUID Linker","color":"aqua"},"> Datapack ",{"text":"uninstalled","color":"red"}]
