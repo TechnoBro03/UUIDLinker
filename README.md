@@ -16,7 +16,6 @@ A datapack that can get the formatted hexadecimal string representation of the U
   $execute as $(HexString) run say I'm not using a selector!
 ```
 ## Installation
-## Installation
 * Go to [Releases](https://github.com/TechnoBro03/UUIDLinker/releases)
 * Find the desired release version.
 * Download the ```UUIDLinker-X.X.X.zip``` ZIP file.
